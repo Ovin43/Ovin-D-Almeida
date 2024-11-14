@@ -102,7 +102,7 @@ body{
     transform: translate(0%,80%);
     color:white;
 }
-@keyframes appear{
+/* @keyframes appear{
     from{
         opacity: 0;
         clip-path: inset(100% 100% 0 0);
@@ -110,7 +110,7 @@ body{
         opacity: 1;
         clip-path: inset(0 0 0 0);
     }
-}
+} */
 .secbl{
     height: 100%;
     width: 100%;
@@ -123,8 +123,8 @@ body{
     z-index:-3;
     height: 40%;
     width:100%;
-    animation: appear linear;
-    animation-timeline:view();
+    /* animation: appear linear;
+    animation-timeline:view(); */
 }
 .secpicbl h2{
     position:absolute;
