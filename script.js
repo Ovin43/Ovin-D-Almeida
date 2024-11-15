@@ -1,3 +1,25 @@
+document.addEventListener("DOMContentLoaded",()=>{
+    const hh=document.querySelector("h2");
+    const hhh=document.querySelector("h3")
+    const hhhh=document.querySelector("h4")
+    const spi=document.querySelector(".spi")
+    const targets=document.querySelector(".secpicbl");
+    const obser=new IntersectionObserver((entrie)=>{
+        entrie.forEach((entry)=>{
+            if(entry.isIntersecting){
+                hh.classList.add("trans");
+                hhh.classList.add("trans");
+                hhhh.classList.add("trans");
+                spi.classList.add("trans");
+                // obser.unobserve(entry.targets);
+            }
+        });
+    },{
+        threshold: 0.1 
+      });
+      obser.observe(targets);
+});
+
 document.addEventListener("DOMContentLoaded", function() {
     const target = document.querySelector("#loading-bar");
     const milestones = document.querySelectorAll(".milestone");
@@ -21,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
           observer.unobserve(entry.target); 
         }
-      });
+      }); 
     }, {
       threshold: 0.1 
     });
@@ -69,7 +91,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                     pto4.style.transform="translate(0%,0%)";
                     pto5.style.transform="translate(0%,0%)";
                     pto6.style.transform="translate(0%,0%)";
-                },1000)     
+                },100)     
                 obse.unobserve(enetr.progg) 
             };
         });

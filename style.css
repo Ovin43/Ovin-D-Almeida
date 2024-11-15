@@ -102,15 +102,6 @@ body{
     transform: translate(0%,80%);
     color:white;
 }
-/* @keyframes appear{
-    from{
-        opacity: 0;
-        clip-path: inset(100% 100% 0 0);
-    }to{
-        opacity: 1;
-        clip-path: inset(0 0 0 0);
-    }
-} */
 .secbl{
     height: 100%;
     width: 100%;
@@ -123,22 +114,20 @@ body{
     z-index:-3;
     height: 40%;
     width:100%;
-    /* animation: appear linear;
-    animation-timeline:view(); */
 }
+
 .secpicbl h2{
     position:absolute;
     font-size: 700%;
     width:fit-content;
-    left:7%;
     color:#ff7b00;
-    -webkit-text-stroke:1px #FEF9F2;
-}
+    left:-30%;
 
+}
 .secpicbl h3{
     font-size:200%;
     position:absolute;
-    left: 18%;
+    left:-30%;
     top:26%;
     color: white;
     
@@ -146,7 +135,7 @@ body{
 .secpicbl h4{
     font-size: 380%;
     position: absolute;
-    left: 7%;
+    left:-30%;
     top: 30%;
     color:var(--main-bg-color);
 
@@ -154,13 +143,43 @@ body{
 
 .secpicbl p{
     position:absolute;
-    right: 10%;
+    right: -30%;
     font-size: 150%;
     top: 50%;
     color:#ff7b00;
     background-color:#fef9f2c9;
     padding:8px;
     border-radius:8px;
+}
+
+.secpicbl h3.trans{
+    animation: eass 2s ease-in-out;
+    left: 18%;
+
+}
+.secpicbl h2.trans{
+    animation:eass 2s ease-in-out;
+    left:7%;
+}
+
+.secpicbl h4.trans{
+    animation: eass 2s ease-in-out;
+    left: 7%;
+
+}
+
+.secpicbl p.trans{
+    animation: eass 2s ease-in-out;
+    right: 10%;
+}
+
+@keyframes eass{
+    0%{
+        transform: translateY(400%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
 }
 
 .backdrop{
@@ -438,7 +457,7 @@ body{
     justify-content: center;
     left: -460px;
     top: 20px;
-    animation: moving 20s infinite;
+    animation: moving 30s infinite;
 }
 
 @keyframes moving {
