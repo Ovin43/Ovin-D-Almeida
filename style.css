@@ -8,13 +8,26 @@
 #A56E06
 #FFCF00
 #F2F2F2
- #C0C8D0 */
+ #C0C8D0 
+ 
+#212A31
+#2E3944
+#124E66
+#748D92
+#D3D9D4
+ 
+ */
 :root{
-    --main-bg-color:#FEF9F2;
+    --main-bg-color:#212A31;
+    --secon-bg-color:#2E3944;
+    --third-bg-color:#124E66;
+    --forth-bg-color:#748D92;
+    --fifith-bd-color:#D3D9D4;
+    /* --main-bg-color:#FEF9F2;
     --secon-bg-color:#789DBC;
     --third-bg-color:#FFE3E3;
     --forth-bg-color:#C9E9D2;
-    --fifith-bd-color:#ff7b00;
+    --fifith-bd-color:#ff7b00; */
 }
 
 html{
@@ -28,7 +41,7 @@ body{
 }
 
 .navbar{
-    background-color:#ff7b00;
+    background-color:rgba(33, 42, 49, 0.7);
     padding: 30px;
     width: 100%;
     position: fixed;
@@ -50,19 +63,19 @@ body{
 }
 
 .nav-list a{
-    color: white;
+    color:var(--fifith-bd-color);
     text-decoration: none;
     font-size: 1.2rem;
 }
 
 .nav-list a:hover{
-    color: #9c9c9c;
+    color: #ff7b00;
 }
 
 .picblock{
     position:relative;
     height: 1300px;
-    background-color:var(--secon-bg-color);
+    /* background-color:var(--secon-bg-color); */
     z-index: -1;
     overflow: hidden;
 
@@ -89,18 +102,18 @@ body{
 
 .fir{
     transform: translate(0%,-40%);
-    color: white;
+    color:white;
 }
 .sec{
-    color: var(--forth-bg-color);
+    color: var(--fifith-bd-color);
 }
 .tir{
     transform: translate(0%,40%);
-    color:var(--third-bg-color);
+    color:var(--forth-bg-color);
 }
 .fur{
     transform: translate(0%,80%);
-    color:white;
+    color:var(--third-bg-color);
 }
 .secbl{
     height: 100%;
@@ -181,7 +194,7 @@ body{
         transform: translateY(0%);
     }
 }
-
+/* 
 .backdrop{
     position:absolute;
     width:600px;
@@ -231,13 +244,13 @@ body{
     background-color: #C9E9D2;
     bottom: 0;
     z-index: -4;
-}
+} */
 
 .aboutblock{
     position: relative;
     height: 610px;
     padding-top: 10px;
-    background-color:var(--secon-bg-color);
+    background-color:var(--main-bg-color);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -246,8 +259,8 @@ body{
 
 .aboutbox{
     position: relative;
-    height:70%;
-    width:80%;
+    height:80%;
+    width:90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,6 +293,7 @@ body{
 
 .dp{
     position: relative;
+    color:var(--fifith-bd-color);
     height: 100px;
     margin: 3%;
     padding: 10px;
@@ -310,7 +324,7 @@ body{
     padding: 20px;
     width: 70%;
     background-color:var(--third-bg-color);
-    color:var(--secon-bg-color);
+    color:var(--fifith-bd-color);
     display: flex;
     justify-content: center;
     font-size: 60px;
@@ -319,18 +333,17 @@ body{
 .educationblock{
     position: relative;
     height: 600px;
-    background-color:var(--forth-bg-color);
+    background-color:var(--main-bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow:0 10px 10px rgba(0, 0, 0, 0.7);
 }
 
 .edumain{
     position: relative;
     height:80%;
     width: 80%;
-    background-color:var(--secon-bg-color);
+    background-color:var(--third-bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -382,7 +395,7 @@ body{
 .loading-bar{
     width: 0;
     height: 100%;
-    background-color:var(--fifith-bd-color);
+    background-color:#ff7b00;
     border-radius: 10px;
     transition: width 6s; 
 }
@@ -447,7 +460,7 @@ body{
     position:absolute;
     padding: 20px;
     background-color:var(--third-bg-color);
-    color:var(--secon-bg-color);
+    color:var(--fifith-bd-color);
     width:400px;
     border-radius: 6px;
     font-size: 250%;
@@ -502,7 +515,7 @@ body{
     position: relative;
     height: 660px;
     padding-top:60px;
-    background-color:var(--secon-bg-color);
+    background-color:var(--main-bg-color);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -516,7 +529,7 @@ body{
 .inthed{
     height: 20%;
     width:100%;
-    background-color:var(--forth-bg-color);
+    background-color:var(--third-bg-color);
     color:var(--fifith-bd-color);
     display: flex;
     align-items: center;
@@ -545,11 +558,11 @@ body{
 }
 
 .intboxf h1{
-    background-color:var(--forth-bg-color);
+    background-color:#ff7b00;
     border-radius: 8px;
 }
 .intboxs h1{
-    background-color:var(--forth-bg-color);
+    background-color:#ff7b00;
     border-radius: 8px;
 }
 
@@ -592,8 +605,8 @@ body{
     border-radius: 8PX;
     padding: 20px;
     width: 80%;
-    color:var(--secon-bg-color);
-    background-color:var(--forth-bg-color);
+    color:var(--fifith-bd-color);
+    background-color:var(--third-bg-color);
     display: flex;
     justify-content: center;
     font-size: 60px;
@@ -633,7 +646,7 @@ body{
 
 .projpp p{
     padding:20px;
-    background-color: #f8f4eec5;
+    background-color: #fff9f3b0;
     border-radius:8px;
 }
 
@@ -664,8 +677,8 @@ body{
 
 .last{
     height: 300px;
-    background-color:var(--fifith-bd-color);
-    color: white;
+    background-color:var(--secon-bg-color);
+    color:var(--fifith-bd-color);
     overflow: hidden;
     display: flex;
     justify-content:space-around;
@@ -682,7 +695,7 @@ body{
 }
 .fff a i {
     font-size: 24px;
-    color: #ffffff;
+    color:var(--fifith-bd-color);
     text-decoration: none;
 }
 
